@@ -12,8 +12,8 @@ fn get_server_port() -> String {
 
 fn main() {
     let app = Server::new(|_request, mut response| {
-        //let motivation = templates::motivation();
-        let html = String::from("<html><head><title>Rosi</title></head><body><h1>Hello Rosi!</h1></body></html>").into_bytes();
+        //let html = String::from("<html><head><title>Rustbridge</title></head><body><h1>Hello Rust!</h1></body></html>").into_bytes();
+        let motivation = templates::motivation();
         Ok(response.header("Content-Type", "text/html; charset=utf-8").body(html)?)
     });
 
