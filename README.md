@@ -38,7 +38,9 @@ We're going to build a webserver which will show a random compliment every time 
 * Use `handlebars.register_template_file` to link the context and to load "templates/motivation.html" to the template
 * Use `handlebars.render` to render the "motivation" template. Tip: Vec<u8> represents bytes
 
-* Change the result of invoking the templates::motivation() function you created earlier
+**main.rs**
+
+* Change the body to the result of invoking the templates::motivation() function you created earlier
 
 
 
